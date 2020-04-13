@@ -1,0 +1,59 @@
+.tab-wrapper {
+  width: 100%;
+  height: 80rpx;
+}
+.scroll-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.scroll-comp {
+  height: 100%;
+}
+.tab-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  height: 100%;
+}
+.space-around {
+  justify-content: space-around;
+}
+.tab-item {
+  height: 100%;
+  padding: 0 30rpx;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.tab-item .item-name {
+  box-sizing: border-box;
+  line-height: 80rpx;
+  height: 100%;
+  font-size: 32rpx;
+  color: #222121;
+  border-bottom: 4rpx solid transparent;
+}
+
+.item-name.active {
+  color: #B28B56;
+  border-bottom-color: #B28B56;
+}
+
+/* 系列卡片tab */
+.serires-tab-box{
+  height: 51rpx;
+}
+.serires-tab .item-name{
+  color: #fff;
+  line-height: 1;
+  border-bottom: 4rpx solid transparent;
+}
+
+.serires-tab .item-name.active{
+  font-weight: 500;
+  color: #fff;
+  border-bottom-color: #fff;
+}

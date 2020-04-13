@@ -1,0 +1,31 @@
+<block wx:if="{{isSupportNavigation}}">
+  <view class="fixed">
+    <view class="custom-nav" style="background: {{background}}; height:{{navHeight}}px;flex: 0 0 {{navHeight}}px">
+      <view class="status-bar" style='height: {{statusBarHeight}}px;width:100%;'></view>
+      <view class="common-nav" wx:if="{{title}}">
+        <view class="common-back" wx:if="{{back}}" style=" height:{{capsuleHeight}}px; border-radius:{{capsuleHeight}}px;left:{{capsulePaddingRight}}px">
+          <text class="iconfont {{leftIcon}}" catchtap="handleBack"></text>
+          <text class="place-line"></text>
+          <text class="iconfont icon-home" catchtap="handleHome"></text>
+        </view>
+        <view class="common-title">{{title}}</view>
+      </view>
+      <view class="nav" wx:else>
+        <view class="left" wx:if="{{back && statusBarHeight}}" catchtap="handleBack">
+          <text class="iconfont {{leftIcon}}"></text>
+        </view>
+        <view class="content"><slot name="support"></slot><slot name="common"></slot></view>
+        <view style="width:{{capsuleWidth}}px;flex: 0 0 {{capsuleWidth}}px; height:{{capsuleHeight}}px;padding-right:{{capsulePaddingRight}}px"></view>
+      </view>
+    </view>
+    <slot name="other"></slot>
+  </view>
+  <view style="height:{{navHeight}}px; width: 100%"></view>
+</block>
+<block wx:else>
+  <view class="custom-nav sticky" style="background: {{background}};">
+    <slot name="notSupport"></slot>
+    <slot name="common"></slot>
+    <slot name="other"></slot>
+  </view>
+</block>

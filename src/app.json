@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/static/home.png",
+        "selectedIconPath": "/static/home_1.png"
+      },
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/static/home.png",
+        "selectedIconPath": "/static/home_1.png"
+      }
+    ],
+    "color": "#7d7d7d",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#222121",
+    "borderStyle": "white"
+  },
+  "navigateToMiniProgramAppIdList": [],
+  "usingComponents": {
+    "date-filter": "nativeComponents/common/DateFilter/index"
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 20000
+  },
+  "sitemapLocation": "sitemap.json"
+}
